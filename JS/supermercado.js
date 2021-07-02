@@ -39,9 +39,17 @@ document.querySelector("input[type=submit").addEventListener('click',()=>{
     somaProduto.innerHTML = "R$ "+soma;
 })
 
-document.querySelector("button[name=limpar").addEventListener('click',()=>{
+document.querySelector("button[name=limpar]").addEventListener('click',()=>{
     items = [];
 
     document.querySelector(".lista-produtos").innerHTML = ""
     document.querySelector(".soma-produto h1").innerHTML = "R$ 0"
+})
+
+
+document.querySelector("button[name=delete-btn]").addEventListener('click',()=>{
+    let encontrado = document.querySelector(".delete input");
+    encontrado = encontrado.value;
+    let index = items.filter(x=> x.nome = encontrado ? x : null);
+    alert(index.nome)
 })

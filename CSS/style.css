@@ -4,11 +4,25 @@
     box-sizing: border-box;
     font-family: "roboto";
 }
+
+body,html{
+    min-height: 100vh;
+}
+
 header{
     background-color: #5a71bb;
     text-align: center;
     color: white;
     padding:20px 0;
+}
+
+.container{
+    min-height: 89.5vh;
+    padding:10px 0 0;
+    background: url("/Assets/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
 }
 
 .lista-cadastro{
@@ -21,6 +35,14 @@ header{
     flex: 1;
     height: 40px;
     padding-left: 20px;
+}
+
+.lista-cadastro input[type="submit"]{
+    width:100px;
+    border:0;
+    border-radius:5px;
+    background-color:#ccc;
+    cursor: pointer;
 }
 
 .lista-produto-single{
@@ -50,4 +72,40 @@ h3.price-produto > span{
 
 .soma-produto{
     margin: 20px;
+}
+
+.limpar{
+    display: flex;
+    justify-content: center;
+}
+
+button[name="limpar"]{
+    padding:15px;
+    width:300px;
+    border: 0; 
+    border-radius: 5px;
+    background-color: rgb(18, 119, 187);
+    color: white;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+.delete input{
+    flex-grow: 1;
+    padding: 10px 20px;
+}
+
+.delete button{
+    width:100px;
+    border:0;
+    border-radius:5px;
+    background-color:#ccc;
+    cursor: pointer;
 }
