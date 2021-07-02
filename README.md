@@ -1,4 +1,4 @@
 # Projeto utilizando JS puro
-![video](/Assets/video-demost.mp4)
+![gif](/Assets/video-demost-gif.gif)
 
 ## Estilização rápida pórem ainda vai ser melhor implementada
