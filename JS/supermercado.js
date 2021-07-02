@@ -12,6 +12,7 @@ document.querySelector("input[type=submit").addEventListener('click',()=>{
     let listaProdutos = document.querySelector(".lista-produtos")
     let soma = 0;
     
+    // criar uma function utilizando o map para ativar so quando eu mandar
     listaProdutos.innerHTML = "";
     items.map((val)=>{
         soma += parseFloat(val.valor);
