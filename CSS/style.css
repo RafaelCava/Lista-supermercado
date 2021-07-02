@@ -14,6 +14,14 @@ header{
     text-align: center;
     color: white;
     padding:20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header > h2:first-child{
+    color: tomato;
+    letter-spacing: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container{
@@ -21,7 +29,7 @@ header{
     padding:10px 0 0;
     background: url("/Assets/Background.jpg");
     background-repeat: repeat-y;
-    background-size: 100vw 89.5vh;
+    background-size: 100% 89.5vh;
 }
 
 .lista-cadastro{
@@ -43,6 +51,7 @@ header{
     border: 1px solid #ccc;
     border-radius:10px;
     background-color: #5a71bb;
+    color: white;
 }
 
 input::placeholder{
@@ -117,6 +126,7 @@ button[name="limpar"]{
     border-radius:10px;
     margin-right: 10px;
     background-color: #5a71bb;
+    color: white;
 }
 
 .delete button{
