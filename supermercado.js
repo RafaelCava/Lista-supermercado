@@ -38,3 +38,10 @@ document.querySelector("input[type=submit").addEventListener('click',()=>{
     let somaProduto = document.querySelector(".soma-produto h1");
     somaProduto.innerHTML = "R$ "+soma;
 })
+
+document.querySelector("button[name=limpar").addEventListener('click',()=>{
+    items = [];
+
+    document.querySelector(".lista-produtos").innerHTML = ""
+    document.querySelector(".soma-produto h1").innerHTML = "R$ 0"
+})
