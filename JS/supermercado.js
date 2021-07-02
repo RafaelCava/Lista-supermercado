@@ -9,12 +9,6 @@ document.querySelector("input[type=submit").addEventListener('click',()=>{
         valor:precoProduto.value
     })
 
-    /* 
-    <div class="lista-produto-single">
-        <h3>Redbull</h3>
-        <h3 class="price-produto">R$20,00</h3>
-    </div>
-     */
     let listaProdutos = document.querySelector(".lista-produtos")
     let soma = 0;
     
@@ -37,6 +31,7 @@ document.querySelector("input[type=submit").addEventListener('click',()=>{
     
     let somaProduto = document.querySelector(".soma-produto h1");
     somaProduto.innerHTML = "R$ "+soma;
+    console.log(items)
 })
 
 document.querySelector("button[name=limpar]").addEventListener('click',()=>{
