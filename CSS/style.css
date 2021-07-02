@@ -20,9 +20,8 @@ header{
     min-height: 89.5vh;
     padding:10px 0 0;
     background: url("/Assets/Background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 -100px;
+    background-repeat: repeat-y;
+    background-size: 100vw 89.5vh;
 }
 
 .lista-cadastro{
@@ -43,6 +42,11 @@ header{
     padding-left: 20px;
     border: 1px solid #ccc;
     border-radius:10px;
+    background-color: #5a71bb;
+}
+
+input::placeholder{
+    color: white;
 }
 
 .lista-cadastro input[type="submit"]{
@@ -112,6 +116,7 @@ button[name="limpar"]{
     border: 1px solid #ccc;
     border-radius:10px;
     margin-right: 10px;
+    background-color: #5a71bb;
 }
 
 .delete button{
@@ -124,7 +129,7 @@ button[name="limpar"]{
 
 input[type="text"]:focus,
 input[type="number"]:focus{
-    border-color: rgb(119, 107, 107);
+    border:2px solid rgb(223, 99, 99);
     transition: 1s;
 }
 
@@ -138,4 +143,5 @@ input[type="submit"]:hover{
 button[name="limpar"]:hover{
     box-shadow: 0 8px 8px 7px rgb(105, 171, 214);
     outline:0;
+    transition: 1s;
 }
