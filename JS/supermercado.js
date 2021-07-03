@@ -19,6 +19,7 @@ const addTexto = ()=>{
 }
 
 const addItem = () =>{
+    // TODO inserir verificação se possui string no input
     let nomeProduto = document.getElementById("nome_produto");
     let precoProduto = document.getElementById("valor_produto");
     
