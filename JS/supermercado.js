@@ -9,6 +9,7 @@ const addTexto = ()=>{
         listaProdutos.innerHTML += `
         <div class="lista-produto-single">
         <h3>${val.nome}</h3>
+        <h3 class="price-produto"><span>${val.peso} Kg<span></h3>
         <h3 class="price-produto"><span>R$${val.valor}<span></h3>
         </div>
         
@@ -19,7 +20,6 @@ const addTexto = ()=>{
 }
 
 const addItem = () =>{
-    // TODO inserir verificação se possui string no input
     let nomeProduto = document.getElementById("nome_produto");
     let precoProduto = document.getElementById("valor_produto");
     let pesoProduto = document.querySelector("input[name=quantidade_produto]");
