@@ -6,8 +6,7 @@
 }
 
 body,html{
-    min-height: 100vh;
-    background:linear-gradient(90deg,#833ab4,#641dfd,#fc4574)
+    height: 100%;
 }
 
 header{
@@ -18,19 +17,28 @@ header{
     display: flex;
     justify-content: space-around;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-header > h2:first-child{
+header .logo > h2{
     color: tomato;
     letter-spacing: 4px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+}
+
+.logo img{
+    width:100%;
+    max-width: 40px;
 }
 
 .container{
     min-height: 89.5vh;
     padding:10px 0 0;
-    background: url("/Assets/Background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background: linear-gradient(133deg,rgba(0, 255, 136, 0.534), cyan,tomato);
 }
 
 .lista-cadastro{
@@ -70,7 +78,7 @@ input::placeholder{
 .lista-produto-single{
     padding:10px 0;
     margin: 20px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgba(255, 99, 71, 0.514);
     display: flex;
     align-items: center;
 }
