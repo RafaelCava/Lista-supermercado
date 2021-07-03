@@ -22,16 +22,19 @@ const addItem = () =>{
     // TODO inserir verificação se possui string no input
     let nomeProduto = document.getElementById("nome_produto");
     let precoProduto = document.getElementById("valor_produto");
+    let pesoProduto = document.querySelector("input[name=quantidade_produto]");
     if(nomeProduto.value === ""){
         alert("Insira o nome do Produto")
     }else{
         items.push({
             nome: nomeProduto.value,
-            valor:precoProduto.value
+            valor: precoProduto.value,
+            peso: pesoProduto.value
         })
         addTexto();
         nomeProduto.value = "";
         precoProduto.value = "";
+        pesoProduto.value = "";
     }
 }
 
