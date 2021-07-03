@@ -30,7 +30,7 @@ const addTexto = () =>{
     
     
     let somaProduto = document.querySelector(".soma-produto h1");
-    somaProduto.innerHTML = "R$ "+soma;
+    somaProduto.innerHTML =`Total : R$`+soma;
 }
 
 const delList = () =>{
