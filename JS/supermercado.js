@@ -22,14 +22,17 @@ const addItem = () =>{
     // TODO inserir verificação se possui string no input
     let nomeProduto = document.getElementById("nome_produto");
     let precoProduto = document.getElementById("valor_produto");
-    
-    items.push({
-        nome: nomeProduto.value,
-        valor:precoProduto.value
-    })
-    addTexto();
-    nomeProduto.value = "";
-    precoProduto.value = "";
+    if(nomeProduto.value === ""){
+        alert("Insira o nome do Produto")
+    }else{
+        items.push({
+            nome: nomeProduto.value,
+            valor:precoProduto.value
+        })
+        addTexto();
+        nomeProduto.value = "";
+        precoProduto.value = "";
+    }
 }
 
 const delList = () =>{
@@ -46,7 +49,7 @@ const delItem = () =>{
         addTexto();
         inputValue.value = "";
     }else{
-        alert(`Esse item não está na lista`)
+        alert(`Este item não está na sua lista`)
     }
 }
 
