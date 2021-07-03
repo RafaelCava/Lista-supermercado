@@ -1,6 +1,6 @@
 let items = [];
 
-const addTexto = () =>{
+const addItem = () =>{
     let nomeProduto = document.getElementById("nome_produto");
     let precoProduto = document.getElementById("valor_produto");
     
@@ -9,9 +9,9 @@ const addTexto = () =>{
         valor:precoProduto.value
     })
 
-    let listaProdutos = document.querySelector(".lista-produtos")
     let soma = 0;
     
+    let listaProdutos = document.querySelector(".lista-produtos")
     listaProdutos.innerHTML = "";
     items.map((val)=>{
         soma += parseFloat(val.valor);
@@ -37,7 +37,7 @@ const delList = () =>{
     items = [];
 
     document.querySelector(".lista-produtos").innerHTML = ""
-    document.querySelector(".soma-produto h1").innerHTML = "R$ 0"
+    document.querySelector(".soma-produto h1").innerHTML = `Total : R$0`
 }
 
 const delItem = () =>{
@@ -67,6 +67,6 @@ const delItem = () =>{
     }
 }
 
-document.querySelector("input[type=submit").addEventListener('click',addTexto);
+document.querySelector("input[type=submit").addEventListener('click',addItem);
 document.querySelector("button[name=limpar]").addEventListener('click',delList);
 document.querySelector("button[name=delete-btn]").addEventListener('click',delItem);

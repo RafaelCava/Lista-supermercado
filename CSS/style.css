@@ -7,6 +7,7 @@
 
 body,html{
     min-height: 100vh;
+    background:linear-gradient(90deg,#833ab4,#641dfd,#fc4574)
 }
 
 header{
@@ -28,8 +29,8 @@ header > h2:first-child{
     min-height: 89.5vh;
     padding:10px 0 0;
     background: url("/Assets/Background.jpg");
-    background-repeat: repeat-y;
-    background-size: 100% 89.5vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
 }
 
 .lista-cadastro{
