@@ -1,7 +1,8 @@
 let items = [];
+const listaProdutos = document.querySelector(".lista-produtos")
+const somaProduto = document.querySelector(".soma-produto h1")
 const addTexto = ()=>{
     let soma = 0;
-    let listaProdutos = document.querySelector(".lista-produtos")
     listaProdutos.innerHTML = "";
     items.map((val)=>{
         soma += parseFloat(val.valor);
@@ -14,7 +15,6 @@ const addTexto = ()=>{
         `
     })
     soma = soma.toFixed(2)
-    let somaProduto = document.querySelector(".soma-produto h1");
     somaProduto.innerHTML =`Total : R$`+soma;
 }
 
@@ -33,7 +33,7 @@ const addItem = () =>{
 
 const delList = () =>{
     items = [];
-    document.querySelector(".lista-produtos").innerHTML = ""
+    listaProdutos.innerHTML = ""
     document.querySelector(".soma-produto h1").innerHTML = `Total : R$0`
 }
 
